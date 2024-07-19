@@ -24,3 +24,52 @@ For this project, you will use the Integrated Development Environment (IDE) link
 If you need additional support, please navigate to the course page and reach out to your course instructor.
 ## FUTURE USE
 Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
+
+# CHANGES TO ORIGINAL FILE
+## SECTION C
+Prompt: \
+File name: \
+Line number(s): \
+Change:
+
+## SECTION D
+Prompt: \
+File name: \
+Line number(s): \
+Change: 
+
+## SECTION E
+Prompt: \
+File name: \
+Line number(s): \
+Change: 
+
+## SECTION F
+Prompt: \
+File name: \
+Line number(s): \
+Change: 
+
+## SECTION G
+Prompt: \
+File name: \
+Line number(s): \
+Change: 
+
+## SECTION H
+Prompt: \
+File name: \
+Line number(s): \
+Change: 
+
+## SECTION I
+Prompt: \
+File name: \
+Line number(s): \
+Change: 
+
+## SECTION J
+Prompt: \
+File name: \
+Line number(s): \
+Change: 
