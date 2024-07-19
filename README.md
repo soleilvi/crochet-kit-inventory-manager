@@ -27,49 +27,49 @@ Take this opportunity to create or add to a simple resume portfolio to highlight
 
 # CHANGES TO ORIGINAL FILE
 ## SECTION C
-Prompt: \
-File name: \
-Line number(s): \
-Change:
+### PROMPT
+### FILE NAME(S)
+### LINE NUMBER(S)
+### CHANGE(S)
 
 ## SECTION D
-Prompt: \
-File name: \
-Line number(s): \
-Change: 
+### PROMPT
+### FILE NAME(S)
+### LINE NUMBER(S)
+### CHANGE(S)
 
 ## SECTION E
-Prompt: \
-File name: \
-Line number(s): \
-Change: 
+### PROMPT
+### FILE NAME(S)
+### LINE NUMBER(S)
+### CHANGE(S)
 
 ## SECTION F
-Prompt: \
-File name: \
-Line number(s): \
-Change: 
+### PROMPT
+### FILE NAME(S)
+### LINE NUMBER(S)
+### CHANGE(S)
 
 ## SECTION G
-Prompt: \
-File name: \
-Line number(s): \
-Change: 
+### PROMPT
+### FILE NAME(S)
+### LINE NUMBER(S)
+### CHANGE(S)
 
 ## SECTION H
-Prompt: \
-File name: \
-Line number(s): \
-Change: 
+### PROMPT
+### FILE NAME(S)
+### LINE NUMBER(S)
+### CHANGE(S)
 
 ## SECTION I
-Prompt: \
-File name: \
-Line number(s): \
-Change: 
+### PROMPT
+### FILE NAME(S)
+### LINE NUMBER(S)
+### CHANGE(S)
 
 ## SECTION J
-Prompt: \
-File name: \
-Line number(s): \
-Change: 
+### PROMPT
+### FILE NAME(S)
+### LINE NUMBER(S)
+### CHANGE(S)
