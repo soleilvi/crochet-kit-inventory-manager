@@ -28,9 +28,19 @@ Take this opportunity to create or add to a simple resume portfolio to highlight
 # CHANGES TO ORIGINAL FILE
 ## SECTION C
 ### PROMPT
+Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 ### FILE NAME(S)
+mainscreen.html
 ### LINE NUMBER(S)
+1. 14
+2. 19
+3. 21
+4. 53
 ### CHANGE(S)
+1. Changed the title from "My Bycicle Shop" to "Play 'n Hooky"
+2. Changed header 1 from "Shop" to "Play 'n Hooky"
+3. Changed header 2 from "Parts" to "Kit Replacement Parts"
+4. Changed header 2 from "Products" to "Our Crochet Kits"
 
 ## SECTION D
 ### PROMPT
