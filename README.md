@@ -40,7 +40,7 @@ mainscreen.html
 1. Changed the title from "My Bycicle Shop" to "Play 'n Hooky"
 2. Changed header 1 from "Shop" to "Play 'n Hooky"
 3. Changed header 2 from "Parts" to "Kit Replacement Parts"
-4. Changed header 2 from "Products" to "Our Crochet Kits"
+4. Changed header 2 from "Products" to "Crochet Kits"
 
 ## SECTION D
 ### PROMPT
