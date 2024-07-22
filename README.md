@@ -28,7 +28,8 @@ Take this opportunity to create or add to a simple resume portfolio to highlight
 # CHANGES TO ORIGINAL FILE
 ## SECTION C
 ### PROMPT
-Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
+Customize the HTML user interface for your customer’s application. The user interface should include the shop name, 
+the product names, and the names of the parts.
 ### FILE NAME(S)
 mainscreen.html
 ### LINE NUMBER(S)
@@ -44,9 +45,20 @@ mainscreen.html
 
 ## SECTION D
 ### PROMPT
+Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation
+to and from the “About” page and the main screen.
 ### FILE NAME(S)
+* aboutpage.html
+* AboutPageController.java
+* mainscreen.html
 ### LINE NUMBER(S)
+1. All line numbers (aboutpage.html)
+2. All line numbers (AboutPageController.java)
+3. 90-94 (mainscreen.html)
 ### CHANGE(S)
+1. Created aboutpage.html, added a title and company description, and linked it back to the main screen
+2. Created AboutPageController.java to attribute aboutpage.html to the pathname "/about"
+3. Added a link from the main page to the about page
 
 ## SECTION E
 ### PROMPT
