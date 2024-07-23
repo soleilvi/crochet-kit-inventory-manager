@@ -127,6 +127,24 @@ public class AddProductController {
         return "confirmationdeleteproduct";
     }
 
+    @GetMapping("/buyproduct")
+    public String buyProduct(@RequestParam("productID") int theId, Model theModel) {
+        ProductService productService = context.getBean(ProductServiceImpl.class);
+        Product product2 = productService.findById(theId);  // The current product being bought
+        int product2Inv = product2.getInv();
+
+        if (product2Inv > 0) {
+            product2.setInv(product2Inv - 1);
+            productService.save(product2);
+            System.out.println(product2.getName() + "'s inventory has changed to " + product2.getInv());
+            return "confirmationbuyproduct";
+        }
+        else {
+            System.out.println("purchase unsuccessful");
+            return "unsuccessfulbuyproduct";
+        }
+    }
+
     public AddProductController(PartService partService) {
         this.partService = partService;
     }

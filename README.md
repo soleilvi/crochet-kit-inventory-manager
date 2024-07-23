@@ -79,9 +79,27 @@ respective repositories were empty
 
 ## SECTION F
 ### PROMPT
+Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
+* The “Buy Now” button must be next to the buttons that update and delete products.
+* The button should decrement the inventory of that product by one. It should not affect the inventory of any of the 
+associated parts.
+* Display a message that indicates the success or failure of a purchase.
 ### FILE NAME(S)
+* mainscreen.html
+* confirmationbuyproduct.html
+* unsuccessfulbuyproduct.html
+* AddProductController.java
 ### LINE NUMBER(S)
+1. 85 (mainscreen.html)
+2. All line numbers (confirmationbuyproduct.html)
+3. All line numbers (unsuccessfulbuyproduct.html)
+4. 129-146 (AddProductController.java)
 ### CHANGE(S)
+1. Added a "Buy Now" button in the products section
+2. Created the page that would show if the product purchase was successful
+3. Created the page that would show if the product purchase was unsuccessful
+4. Built the logic to ensure the "Buy Now" button worked with the right product and led to the correct outcome (show that
+the purchase was successful or unsuccessful based on the product inventory)
 
 ## SECTION G
 ### PROMPT
