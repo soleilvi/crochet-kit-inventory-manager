@@ -39,38 +39,40 @@ public class BootStrapData implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-       /*
-        OutsourcedPart o= new OutsourcedPart();
-        o.setCompanyName("Western Governors University");
-        o.setName("out test");
-        o.setInv(5);
-        o.setPrice(20.0);
-        o.setId(100L);
-        outsourcedPartRepository.save(o);
-        OutsourcedPart thePart=null;
-        List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
-        for(OutsourcedPart part:outsourcedParts){
-            if(part.getName().equals("out test"))thePart=part;
+        // PARTS SECTION
+        if (outsourcedPartRepository.count() == 0) {
+            OutsourcedPart hook= new OutsourcedPart("Play 'n Hooky", "Hook", 0.99, 40);
+            OutsourcedPart yarn= new OutsourcedPart("Play 'n Hooky", "Yarn", 0.50, 70);
+            OutsourcedPart plasticEyes= new OutsourcedPart("Play 'n Hooky", "Plastic eyes", 0.10, 100);
+            OutsourcedPart needle= new OutsourcedPart("Play 'n Hooky", "Needle", 0.50, 40);
+            OutsourcedPart pattern= new OutsourcedPart("Play 'n Hooky", "Pattern", 0.20, 40);
+
+            outsourcedPartRepository.save(hook);
+            outsourcedPartRepository.save(yarn);
+            outsourcedPartRepository.save(plasticEyes);
+            outsourcedPartRepository.save(needle);
+            outsourcedPartRepository.save(pattern);
         }
 
-        System.out.println(thePart.getCompanyName());
-        */
-        List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
-        for(OutsourcedPart part:outsourcedParts){
-            System.out.println(part.getName()+" "+part.getCompanyName());
-        }
+        // PRODUCTS SECTION
+        if (productRepository.count() == 0) {
+            Product catKit= new Product("Cat kit",10.99,47);
+            Product dogKit= new Product("Dog kit",10.99,51);
+            Product frogKit= new Product("Frog kit",10.99,44);
+            Product penguinKit= new Product("Penguin kit",10.99,48);
+            Product bunnyKit= new Product("Bunny kit",10.99,41);
 
-        /*
-        Product bicycle= new Product("bicycle",100.0,15);
-        Product unicycle= new Product("unicycle",100.0,15);
-        productRepository.save(bicycle);
-        productRepository.save(unicycle);
-        */
+            productRepository.save(catKit);
+            productRepository.save(dogKit);
+            productRepository.save(frogKit);
+            productRepository.save(penguinKit);
+            productRepository.save(bunnyKit);
+        }
 
         System.out.println("Started in Bootstrap");
-        System.out.println("Number of Products"+productRepository.count());
+        System.out.println("Number of Products: " + productRepository.count());
         System.out.println(productRepository.findAll());
-        System.out.println("Number of Parts"+partRepository.count());
+        System.out.println("Number of Parts: " + partRepository.count());
         System.out.println(partRepository.findAll());
 
     }

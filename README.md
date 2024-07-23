@@ -62,9 +62,20 @@ to and from the “About” page and the main screen.
 
 ## SECTION E
 ### PROMPT
+Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five 
+products in your sample inventory and should not overwrite existing data in the database.
 ### FILE NAME(S)
+* BootStrapData.java
+* OutsourcedPart.java
 ### LINE NUMBER(S)
+1. 19-25 (OutsourcedPart.java)
+2. 42-69 (BootStrapData.java)
+3. 73 & 75 (BootStrapData.java)
 ### CHANGE(S)
+1. Added a parameterized constructor for OutsourcedPart to create its objects with more ease
+2. I replaced all the code in this section with code that added the parts and products I needed for my shop if their
+respective repositories were empty
+3. Added spaces to the print statements to make them more clear
 
 ## SECTION F
 ### PROMPT
