@@ -41,11 +41,11 @@ public class BootStrapData implements CommandLineRunner {
 
         // PARTS SECTION
         if (outsourcedPartRepository.count() == 0) {
-            OutsourcedPart hook= new OutsourcedPart("Play 'n Hooky", "Hook", 0.99, 40);
-            OutsourcedPart yarn= new OutsourcedPart("Play 'n Hooky", "Yarn", 0.50, 70);
-            OutsourcedPart plasticEyes= new OutsourcedPart("Play 'n Hooky", "Plastic eyes", 0.10, 100);
-            OutsourcedPart needle= new OutsourcedPart("Play 'n Hooky", "Needle", 0.50, 40);
-            OutsourcedPart pattern= new OutsourcedPart("Play 'n Hooky", "Pattern", 0.20, 40);
+            OutsourcedPart hook= new OutsourcedPart("Play 'n Hooky", "Hook", 0.99, 40, 100 ,500);
+            OutsourcedPart yarn= new OutsourcedPart("Play 'n Hooky", "Yarn", 0.50, 70, 300, 1500);
+            OutsourcedPart plasticEyes= new OutsourcedPart("Play 'n Hooky", "Plastic eyes", 0.10, 100, 200, 1000);
+            OutsourcedPart needle= new OutsourcedPart("Play 'n Hooky", "Needle", 0.50, 40, 100 ,500);
+            OutsourcedPart pattern= new OutsourcedPart("Play 'n Hooky", "Pattern", 0.20, 40, 100 ,500);
 
             outsourcedPartRepository.save(hook);
             outsourcedPartRepository.save(yarn);

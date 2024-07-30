@@ -17,11 +17,13 @@ String companyName;
     public OutsourcedPart() {
     }
 
-    public OutsourcedPart(String companyName, String name, double price, int inv) {
+    public OutsourcedPart(String companyName, String name, double price, int inv, int minInv, int maxInv) {
         this.companyName = companyName;
         this.name = name;
         this.price = price;
         this.inv = inv;
+        this.minInv = minInv;
+        this.maxInv = maxInv;
     }
 
     public String getCompanyName() {

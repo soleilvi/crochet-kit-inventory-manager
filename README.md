@@ -103,9 +103,69 @@ the purchase was successful or unsuccessful based on the product inventory)
 
 ## SECTION G
 ### PROMPT
+Modify the parts to track maximum and minimum inventory by doing the following:
+* Add additional fields to the part entity for maximum and minimum inventory.
+* Modify the sample inventory to include the maximum and minimum fields.
+* Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set 
+the maximum and minimum values.
+* Rename the file the persistent storage is saved to.
+* Modify the code to enforce that the inventory is between or at the minimum and maximum value.
 ### FILE NAME(S)
+* Part.java
+* OutsourcedPart.java
+* InhousePart.java
+* BootStrapData.java
+* InhousePartForm.html
+* OutsourcedPartForm.html
+* application.properties
+* spring-h2-storage.db.h2.db
+* inventoryValueErrorInhouse.html
+* inventoryValueErrorOutsourced.html
+* inventoryRangeErrorInhouse.html
+* inventoryRangeErrorOutsourced.html
+* AddInhousePartController.java
+* AddOutsourcedPartController.java
 ### LINE NUMBER(S)
+1. 31-34 (Part.java)
+2. 44 & 48-49 (Part.java)
+3. 52 & 57-58 (Part.java)
+4. 93-108 (Part.java)
+5. 20 & 25-26 (OutsourcedPart.java)
+6. 20-27 (InhousePart.java)
+7. 44-48 (BootStrapData.java)
+8. 24-29 (InhousePartForm.html)
+9. 25-30 (OutsourcedPartForm.html)
+10. 6 (application.properties)
+11. Everything (spring-h2-storage.db.h2.db)
+12. 134-141 (Part.java)
+13. All line numbers (inventoryValueErrorInhouse.html)
+14. All line numbers (inventoryValueErrorOutsourced.html)
+15. All line numbers (inventoryRangeErrorInhouse.html)
+16. All line numbers (inventoryRangeErrorOutsourced.html)
+17. 41-46 (AddInhousePartController.java)
+18. 42-47 (AddOutsourcedPartController.java)
 ### CHANGE(S)
+1. Added fields minInv and maxInv for minimum and maximum inventory values
+2. Added minInv and maxInv to parameterized Part constructor #1
+3. Added minInv and maxInv to parameterized Part constructor #2
+4. Made getters and setters for minInv and maxInv
+5. Added minInv and maxInv to parameterized OutsourcedPart constructor 
+6. Added a parameterized constructor to InhousePart that includes minInv and maxInv
+7. Changed the Part object initializations so that they include minInv and maxInv values
+8. Added input boxes for minInv and maxInv
+9. Added input boxes for minInv and maxInv
+10. Removed the URL line; it was unnecessary and may have caused problems for other users
+11. I previously had the database in a file outside of this project's directory. I moved it in here and changed its
+name from spring-boot-h2-db to spring-h2-storage.
+12. Created methods that can check if the inventory value and its range are valid in a Part object
+13. Created the page that would show if the InhousePart inventory value was outside the range of its minimum and maximum 
+inventory values
+14. Created the page that would show if the OutsourcedPart inventory value was outside the range of its minimum and 
+maximum inventory values
+15. Created the page that would show if the InhousePart minimum and maximum inventory values were reversed
+16. Created the page that would show if the OutsourcedPart minimum and maximum inventory values were reversed
+17. Added logic that checks if the inventory range and value are correct and redirects the user to their respective error pages if they aren't
+18. Added logic that checks if the inventory range and value are correct and redirects the user to their respective error pages if they aren't
 
 ## SECTION H
 ### PROMPT
