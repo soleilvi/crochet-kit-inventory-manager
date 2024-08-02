@@ -78,10 +78,36 @@ public class AddProductController {
                 Product product2 = repo.findById((int) product.getId());
                 PartService partService1 = context.getBean(PartServiceImpl.class);
                 if(product.getInv()- product2.getInv()>0) {
+                    List<Part>partsBelowMin=new ArrayList<>();  // For parts that may fall below their minInv
                     for (Part p : product2.getParts()) {
                         int inv = p.getInv();
-                        p.setInv(inv - (product.getInv() - product2.getInv()));
-                        partService1.save(p);
+                        switch (p.getName()) {
+                            // Each kit will have 2 plastic eyes
+                            case "Plastic eyes":
+                                p.setInv(inv - 2 * (product.getInv() - product2.getInv()));
+                                break;
+                            // Each kit will have 3 balls of yarn
+                            case "Yarn":
+                                p.setInv(inv - 3 * (product.getInv() - product2.getInv()));
+                                break;
+                            default:
+                                p.setInv(inv - (product.getInv() - product2.getInv()));
+                        }
+
+                        // If a part's inventory will go below its minimum, add it to the list
+                        if (!p.inventoryIsValid()) {
+                            partsBelowMin.add(p);
+                        }
+                    }
+                    theModel.addAttribute("partsBelowMin", partsBelowMin);
+                    if (partsBelowMin.isEmpty()) {
+                        // Now that we know the inventory of the parts will be okay, we can save them
+                        for (Part p : product2.getParts()) {
+                            partService1.save(p);
+                        }
+                    }
+                    else {
+                        return "inventoryValueErrorProduct";
                     }
                 }
             }

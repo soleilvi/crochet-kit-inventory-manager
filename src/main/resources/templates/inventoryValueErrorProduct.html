@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Value Error</title>
+</head>
+<body>
+<p>The following parts will go below their minimum inventory if this product's inventory increases: </p>
+<ul th:each="tempPart : ${partsBelowMin}">
+    <li th:text="${tempPart.name}">Part name</li>
+</ul>
+<p>Please update their inventory to continue.</p>
+<a href="http://localhost:8080/">
+    Link to Main Screen
+</a>
+</body>
+</html>

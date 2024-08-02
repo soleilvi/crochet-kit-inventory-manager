@@ -169,9 +169,33 @@ maximum inventory values
 
 ## SECTION H
 ### PROMPT
+Add validation for between or at the maximum and minimum fields. The validation must include the following:
+* Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
+* Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
+* Display error messages when adding and updating parts if the inventory is greater than the maximum.
 ### FILE NAME(S)
+* BootStrapData.java
+* inventoryValueErrorProduct.html
+* AddProductController.java
 ### LINE NUMBER(S)
+1. 44-48 (BootStrapData.java)
+2. All line numbers (inventoryValueErrorProduct.html)
+3. 81 (AddProductController.java)
+4. 84-95 (AddProductController.java)
+5. 96-101 (AddProductController.java)
+6. 102 (AddProductController.java)
+7. 103-110 (AddProductController.java)
 ### CHANGE(S)
+1. Changed the values of the parts' inventories so that they are within their min and max
+2. Created a page that would show if the parts of the product would go below their inventory minimum once the product 
+inventory increased
+3. Added a Part list to keep track of the parts that would need more inventory before changing the product inventory
+4. Since my crochet kits would need more than one component of some parts, I added a switch statement to determine how  
+many parts would be used up once the product inventory changes based on the name of the part
+5. Added a conditional statement to check if a part's inventory will be valid once updated
+6. Linked the Part list to the model so that the inventoryValueErrorProduct template would be able to use it
+7. Added a conditional statement that saves the changes of the part inventories if there are no problems and returns 
+the error page otherwise
 
 ## SECTION I
 ### PROMPT
