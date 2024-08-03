@@ -154,7 +154,6 @@ public class AddProductController {
         if (product2Inv > 0) {
             product2.setInv(product2Inv - 1);
             productService.save(product2);
-            System.out.println(product2.getName() + "'s inventory has changed to " + product2.getInv());
             return "confirmationbuyproduct";
         }
         else {
