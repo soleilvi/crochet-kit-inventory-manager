@@ -215,7 +215,7 @@ PartTest.java
 3. Added a unit test for getMaxInv()
 4. Added a unit test for setMaxInv()
 
-## SECTION K (My Own)
+## SECTION L (My Own)
 ### PROMPT
 Add a field to represent how many components of each part are needed to make a kit.
 ### FILE NAME(S)
