@@ -157,7 +157,6 @@ public class AddProductController {
             return "confirmationbuyproduct";
         }
         else {
-            System.out.println("purchase unsuccessful");
             return "unsuccessfulbuyproduct";
         }
     }
