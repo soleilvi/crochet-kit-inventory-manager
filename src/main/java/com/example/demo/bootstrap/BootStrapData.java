@@ -1,5 +1,6 @@
 package com.example.demo.bootstrap;
 
+import com.example.demo.domain.InhousePart;
 import com.example.demo.domain.OutsourcedPart;
 import com.example.demo.domain.Part;
 import com.example.demo.domain.Product;
@@ -41,17 +42,17 @@ public class BootStrapData implements CommandLineRunner {
 
         // PARTS SECTION
         if (outsourcedPartRepository.count() == 0) {
-            OutsourcedPart hook= new OutsourcedPart("Play 'n Hooky", "Hook", 0.99, 100, 100 ,500);
-            OutsourcedPart yarn= new OutsourcedPart("Play 'n Hooky", "Yarn", 0.50, 600, 300, 1500);
-            OutsourcedPart plasticEyes= new OutsourcedPart("Play 'n Hooky", "Plastic eyes", 0.10, 880, 200, 1000);
-            OutsourcedPart needle= new OutsourcedPart("Play 'n Hooky", "Needle", 0.50, 450, 100 ,500);
-            OutsourcedPart pattern= new OutsourcedPart("Play 'n Hooky", "Pattern", 0.20, 100, 100 ,500);
+            InhousePart hook= new InhousePart("Hook", 0.99, 100, 100 ,500);
+            OutsourcedPart yarn= new OutsourcedPart("Paintbox", "Yarn", 0.50, 600, 300, 1500);
+            OutsourcedPart plasticEyes= new OutsourcedPart("Incraftables", "Plastic eyes", 0.10, 880, 200, 1000);
+            OutsourcedPart needle= new OutsourcedPart("Sewem", "Needle", 0.50, 450, 100 ,500);
+            InhousePart pattern= new InhousePart("Pattern", 0.20, 100, 100 ,500);
 
-            outsourcedPartRepository.save(hook);
-            outsourcedPartRepository.save(yarn);
-            outsourcedPartRepository.save(plasticEyes);
-            outsourcedPartRepository.save(needle);
-            outsourcedPartRepository.save(pattern);
+            partRepository.save(hook);
+            partRepository.save(yarn);
+            partRepository.save(plasticEyes);
+            partRepository.save(needle);
+            partRepository.save(pattern);
         }
 
         // PRODUCTS SECTION
