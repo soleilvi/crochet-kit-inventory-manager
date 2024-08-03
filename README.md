@@ -168,11 +168,11 @@ Add validation for between or at the maximum and minimum fields. The validation 
 * Display error messages when adding and updating parts if the inventory is greater than the maximum.
 ### FILE NAME(S)
 * BootStrapData.java
-* inventoryValueErrorProduct.html
+* partInventoryMinimumError.html
 * AddProductController.java
 ### LINE NUMBER(S)
 1. 44-48 (BootStrapData.java)
-2. All line numbers (inventoryValueErrorProduct.html)
+2. All line numbers (partInventoryMinimumError.html)
 3. 81 (AddProductController.java)
 4. 84-95 (AddProductController.java)
 5. 96-101 (AddProductController.java)

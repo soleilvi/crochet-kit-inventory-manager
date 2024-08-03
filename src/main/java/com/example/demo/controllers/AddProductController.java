@@ -107,7 +107,7 @@ public class AddProductController {
                         }
                     }
                     else {
-                        return "inventoryValueErrorProduct";
+                        return "partInventoryMinimumError";
                     }
                 }
             }
