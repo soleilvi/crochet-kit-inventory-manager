@@ -192,9 +192,19 @@ the error page otherwise
 
 ## SECTION I
 ### PROMPT
+Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 ### FILE NAME(S)
+PartTest.java
 ### LINE NUMBER(S)
+1. 104-111
+2. 112-120
+3. 121-129
+4. 130-139
 ### CHANGE(S)
+1. Added a unit test for getMinInv()
+2. Added a unit test for setMinInv()
+3. Added a unit test for getMaxInv()
+4. Added a unit test for setMaxInv()
 
 ## SECTION J
 ### PROMPT
