@@ -250,6 +250,25 @@ components used per kit
 
 ## SECTION J
 ### PROMPT
+Remove the class files for any unused validators in order to clean your code.
 ### FILE NAME(S)
+* Part.java
+* Product.java
+* DeletePartValidator.java
+* ValidDeletePart.java
+* EnufPartsValidator.java
+* ValidEnufParts.java
 ### LINE NUMBER(S)
+1. 16 (Part.java)
+2. 20 (Product.java)
+3. All line numbers (DeletePartValidator.java)
+4. All line numbers (ValidDeletePart.java)
+5. All line numbers (EnufPartsValidator.java)
+6. All line numbers (ValidEnufParts.java)
 ### CHANGE(S)
+1. Deleted line @ValidDeletePart (validation was redundant)
+2. Deleted line @ValidEnufParts (validation was redundant)
+3. Deleted this file 
+4. Deleted this file 
+5. Deleted this file 
+6. Deleted this file

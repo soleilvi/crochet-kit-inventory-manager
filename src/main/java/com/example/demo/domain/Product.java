@@ -1,6 +1,5 @@
 package com.example.demo.domain;
 
-import com.example.demo.validators.ValidEnufParts;
 import com.example.demo.validators.ValidProductPrice;
 
 import javax.persistence.*;
@@ -18,7 +17,6 @@ import java.util.Set;
 @Entity
 @Table(name="Products")
 @ValidProductPrice
-@ValidEnufParts
 public class Product implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
