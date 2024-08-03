@@ -27,6 +27,9 @@
     <p><input type="text" path="maxInv" th:field="*{maxInv}" placeholder="Maximum inventory" class="form-control mb-4 col-4"/></p>
         <p th:if="${#fields.hasErrors('maxInv')}" th:errors="*{maxInv}">Maximum Inventory Error</p>
 
+    <p><input type="text" th:field="*{componentsPerKit}" path="componentsPerKit" placeholder="Components per kit" class="form-control mb-4 col-4"/></p>
+        <p th:if="${#fields.hasErrors('componentsPerKit')}" th:errors="*{componentsPerKit}">Components Error</p>
+
     <p><input type="text" th:field="*{partId}" placeholder="Part ID" class="form-control mb-4 col-4"/></p>
 
     <p><input type="submit" value="Submit" /></p>

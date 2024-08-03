@@ -17,12 +17,13 @@ public class InhousePart extends Part{
     public InhousePart() {
     }
 
-    public InhousePart(String name, double price, int inv, int minInv, int maxInv) {
+    public InhousePart(String name, double price, int inv, int minInv, int maxInv, int componentsPerKit) {
         this.name = name;
         this.price = price;
         this.inv = inv;
         this.minInv = minInv;
         this.maxInv = maxInv;
+        this.componentsPerKit = componentsPerKit;
     }
 
     public int getPartId() {

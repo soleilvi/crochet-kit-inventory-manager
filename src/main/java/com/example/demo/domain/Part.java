@@ -32,6 +32,8 @@ public abstract class Part implements Serializable {
     int minInv;
     @Min(value = 0, message = "Maximum inventory value must be positive")
     int maxInv;
+    @Min(value = 1, message = "At least one component needs to be used in a kit")
+    int componentsPerKit;
 
     @ManyToMany
     @JoinTable(name="product_part", joinColumns = @JoinColumn(name="part_id"),
@@ -41,21 +43,23 @@ public abstract class Part implements Serializable {
     public Part() {
     }
 
-    public Part(String name, double price, int inv, int minInv, int maxInv) {
+    public Part(String name, double price, int inv, int minInv, int maxInv, int componentsPerKit) {
         this.name = name;
         this.price = price;
         this.inv = inv;
         this.minInv = minInv;
         this.maxInv = maxInv;
+        this.componentsPerKit = componentsPerKit;
     }
 
-    public Part(long id, String name, double price, int inv, int minInv, int maxInv) {
+    public Part(long id, String name, double price, int inv, int minInv, int maxInv, int componentsPerKit) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.inv = inv;
         this.minInv = minInv;
         this.maxInv = maxInv;
+        this.componentsPerKit = componentsPerKit;
     }
 
     public long getId() {
@@ -105,6 +109,10 @@ public abstract class Part implements Serializable {
     public void setMaxInv(int maxInv) {
         this.maxInv = maxInv;
     }
+
+    public int getComponentsPerKit() { return componentsPerKit; }
+
+    public void setComponentsPerKit(int componentsPerKit) { this.componentsPerKit = componentsPerKit; }
 
     public Set<Product> getProducts() {
         return products;

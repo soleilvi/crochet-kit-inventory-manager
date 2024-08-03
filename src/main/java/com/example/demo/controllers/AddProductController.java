@@ -81,18 +81,10 @@ public class AddProductController {
                     List<Part>partsBelowMin=new ArrayList<>();  // For parts that may fall below their minInv
                     for (Part p : product2.getParts()) {
                         int inv = p.getInv();
-                        switch (p.getName()) {
-                            // Each kit will have 2 plastic eyes
-                            case "Plastic eyes":
-                                p.setInv(inv - 2 * (product.getInv() - product2.getInv()));
-                                break;
-                            // Each kit will have 3 balls of yarn
-                            case "Yarn":
-                                p.setInv(inv - 3 * (product.getInv() - product2.getInv()));
-                                break;
-                            default:
-                                p.setInv(inv - (product.getInv() - product2.getInv()));
-                        }
+                        int partsPerKit = p.getComponentsPerKit();
+
+                        // By how much the inventory will decrease in the part after the product update
+                        p.setInv(inv - partsPerKit * (product.getInv() - product2.getInv()));
 
                         // If a part's inventory will go below its minimum, add it to the list
                         if (!p.inventoryIsValid()) {

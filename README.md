@@ -206,6 +206,39 @@ PartTest.java
 3. Added a unit test for getMaxInv()
 4. Added a unit test for setMaxInv()
 
+## SECTION K (My Own)
+### PROMPT
+Add a field to represent how many components of each part are needed to make a kit.
+### FILE NAME(S)
+* Part.java
+* OutsourcedPart.java
+* InhousePart.java
+* BootStrapData.java
+* OutsourcedPartForm.html
+* InhousePartForm.html
+* AddProductController.java
+### LINE NUMBER(S)
+1. 35-36 (Part.java)
+2. 46, 52, 55, 62 (Part.java)
+3. 113-116 (Part.java)
+4. 20 & 27 (OutsourcedPart.java)
+5. 20 & 26 (InhousePart.java)
+6. 45-54 (BootStrapData.java)
+7. 30-32 (OutsourcedPartForm.html)
+8. 30-32 (InhousePartForm.html)
+9. 84-87 (AddProductController.java)
+### CHANGE(S)
+1. Added the field componentsPerKit, which represents how many components of each part should be used in each kit
+2. Added componentsPerKit to each Part constructor
+3. Added a getter and setter for componentsPerKit
+4. Added componentsPerKit to the OutsourcedPart constructor
+5. Added componentsPerKit to the InhousePart constructor
+6. Added a componentsPerKit value to each of my parts and rearranged them to be more legible
+7. Added a componentsPerKit form to the OutsourcedPart page so that users can customize this aspect of their parts
+8. Added a componentsPerKit form to the InhousePart page so that users can customize this aspect of their parts
+9. Replaced the switch statement with a partsPerKit variable, which allows any part to have a custom amount of 
+components used per kit
+
 ## SECTION J
 ### PROMPT
 ### FILE NAME(S)
