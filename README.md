@@ -31,17 +31,26 @@ Take this opportunity to create or add to a simple resume portfolio to highlight
 Customize the HTML user interface for your customer’s application. The user interface should include the shop name, 
 the product names, and the names of the parts.
 ### FILE NAME(S)
-mainscreen.html
+* mainscreen.html
+* OutsourcedPartForm.html
+* InhousePartForm.html
+* productForm.html
 ### LINE NUMBER(S)
-1. 14
-2. 19
-3. 21
-4. 53
+1. 14 (mainscreen.html)
+2. 19 (mainscreen.html)
+3. 21 (mainscreen.html)
+4. 53 (mainscreen.html)
+5. 17, 19, 22, 25, 28, 31, 34 (OutsourcedPartForm.html)
+6. 16, 18, 21, 24, 27, 30, 33 (InhousePartForm.html)
+7. 17, 19, 22 (productForm.html)
 ### CHANGE(S)
 1. Changed the title from "My Bycicle Shop" to "Play 'n Hooky"
 2. Changed header 1 from "Shop" to "Play 'n Hooky"
 3. Changed header 2 from "Parts" to "Crochet Kit Components"
 4. Changed header 2 from "Products" to "Crochet Kits"
+5. Added text before each input form so that it's clear what each input represents
+6. Added text before each input form so that it's clear what each input represents
+7. Added text before each input form so that it's clear what each input represents
 
 ## SECTION D
 ### PROMPT
