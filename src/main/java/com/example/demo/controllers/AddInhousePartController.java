@@ -39,10 +39,10 @@ public class AddInhousePartController{
             return "InhousePartForm";
         }
         else if (!part.inventoryRangeIsValid()) {
-            return "inventoryRangeErrorInhouse";
+            return "partInventoryRangeError";
         }
         else if (!part.inventoryIsValid()) {
-            return "inventoryValueErrorInhouse";
+            return "partInventoryValueError";
         }
         else{
         InhousePartService repo=context.getBean(InhousePartServiceImpl.class);

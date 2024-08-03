@@ -119,10 +119,8 @@ the maximum and minimum values.
 * OutsourcedPartForm.html
 * application.properties
 * spring-h2-storage.db.h2.db
-* inventoryValueErrorInhouse.html
-* inventoryValueErrorOutsourced.html
-* inventoryRangeErrorInhouse.html
-* inventoryRangeErrorOutsourced.html
+* partInventoryValueError.html
+* partInventoryRangeError.html
 * AddInhousePartController.java
 * AddOutsourcedPartController.java
 ### LINE NUMBER(S)
@@ -138,12 +136,10 @@ the maximum and minimum values.
 10. 6 (application.properties)
 11. Everything (spring-h2-storage.db.h2.db)
 12. 134-141 (Part.java)
-13. All line numbers (inventoryValueErrorInhouse.html)
-14. All line numbers (inventoryValueErrorOutsourced.html)
-15. All line numbers (inventoryRangeErrorInhouse.html)
-16. All line numbers (inventoryRangeErrorOutsourced.html)
-17. 41-46 (AddInhousePartController.java)
-18. 42-47 (AddOutsourcedPartController.java)
+13. All line numbers (partInventoryValueError.html)
+14. All line numbers (partInventoryRangeError.html)
+15. 41-46 (AddInhousePartController.java)
+16. 42-47 (AddOutsourcedPartController.java)
 ### CHANGE(S)
 1. Added fields minInv and maxInv for minimum and maximum inventory values
 2. Added minInv and maxInv to parameterized Part constructor #1
@@ -158,14 +154,11 @@ the maximum and minimum values.
 11. I previously had the database in a file outside of this project's directory. I moved it in here and changed its
 name from spring-boot-h2-db to spring-h2-storage.
 12. Created methods that can check if the inventory value and its range are valid in a Part object
-13. Created the page that would show if the InhousePart inventory value was outside the range of its minimum and maximum 
+13. Created the page that would show if a part's inventory value was outside the range of its minimum and maximum 
 inventory values
-14. Created the page that would show if the OutsourcedPart inventory value was outside the range of its minimum and 
-maximum inventory values
-15. Created the page that would show if the InhousePart minimum and maximum inventory values were reversed
-16. Created the page that would show if the OutsourcedPart minimum and maximum inventory values were reversed
-17. Added logic that checks if the inventory range and value are correct and redirects the user to their respective error pages if they aren't
-18. Added logic that checks if the inventory range and value are correct and redirects the user to their respective error pages if they aren't
+14. Created the page that would show if a part's minimum and maximum inventory values were reversed
+15. Added logic that checks if the inventory range and value are correct and redirects the user to their respective error pages if they aren't 
+16. Added logic that checks if the inventory range and value are correct and redirects the user to their respective error pages if they aren't
 
 ## SECTION H
 ### PROMPT

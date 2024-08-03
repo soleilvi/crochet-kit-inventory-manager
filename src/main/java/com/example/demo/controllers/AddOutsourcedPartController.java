@@ -40,10 +40,10 @@ public class AddOutsourcedPartController {
             return "OutsourcedPartForm";
         }
         else if (!part.inventoryRangeIsValid()) {
-            return "inventoryRangeErrorOutsourced";
+            return "partInventoryRangeError";
         }
         else if (!part.inventoryIsValid()) {
-            return "inventoryValueErrorOutsourced";
+            return "partInventoryValueError";
         }
         else{
         OutsourcedPartService repo=context.getBean(OutsourcedPartServiceImpl.class);
